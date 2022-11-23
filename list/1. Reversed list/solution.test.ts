@@ -1,25 +1,27 @@
-import { ListNode, reverseList } from "./solution";
+import { linkedListFromArray } from "../../utils/mock/linkedList";
+import { reverseList } from "./solution";
 
-const testList1 = new ListNode(1, new ListNode(2, null));
-const testReversedList1 = new ListNode(2, new ListNode(1, null));
+const arr1 = [1, 2];
+const list1 = linkedListFromArray(arr1);
+const recersedList1 = linkedListFromArray(arr1.reverse());
 
-const testList2 = new ListNode(1, new ListNode(2, new ListNode(3, null)));
-const testReversedList2 = new ListNode(3, new ListNode(2, new ListNode(1, null)));
+const arr2 = [1, 2, 3, 4, 5];
+const list2 = linkedListFromArray(arr2);
+const recersedList2 = linkedListFromArray(arr2.reverse());
 
-const testEmptyList = null;
+const emptyList = null;
 
-test('[1, 2] => [2, 1]', () => {
-  expect(reverseList(testList1)).toStrictEqual(testReversedList1);
+test('1, 2] => [2, 1]', () => {
+  expect(reverseList(list1)).toEqual(recersedList1);
 });
 
-test('[1, 2, 3] => [3, 2, 1]', () => {
-  expect(reverseList(testList2)).toStrictEqual(testReversedList2);
+test('[1, 2, 3, 4, 5] => [5, 4, 3, 2, 1]', () => {
+  expect(reverseList(list2)).toEqual(recersedList2);
 });
 
 test('[] => []', () => {
-  expect(reverseList(testEmptyList)).toStrictEqual(testEmptyList);
+  expect(reverseList(emptyList)).toEqual(emptyList);
 });
-
 
 // [1, 2]
 // prev = null
