@@ -1,12 +1,4 @@
-// Definition for singly-linked list.
-export class ListNode {
-    val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
-        this.val = (val===undefined ? 0 : val)
-        this.next = (next===undefined ? null : next)
-    }
-}
+import { ListNode } from "../../types";
 
 export const addTwoNumbers = (l1: ListNode | null, l2: ListNode | null, carry: number = 0): ListNode | null => {
     if (l1 || l2 || carry) {

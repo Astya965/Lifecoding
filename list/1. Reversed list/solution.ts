@@ -1,13 +1,4 @@
-// Definition for singly-linked list.
-export class ListNode {
-    val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
-        this.val = (val===undefined ? 0 : val)
-        this.next = (next===undefined ? null : next)
-    }
-}
-
+import { ListNode } from "../../types";
 
  export const reverseList = (head: ListNode | null, accumulation: ListNode | null = null): ListNode | null => {
     if (head === null) { // End of recursion

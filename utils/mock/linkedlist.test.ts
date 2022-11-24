@@ -1,4 +1,5 @@
-import {ListNode, linkedListFromArray} from './linkedList';
+import { ListNode } from '../../types';
+import {linkedListFromArray} from './linkedList';
 
 const emptyArr = []
 
