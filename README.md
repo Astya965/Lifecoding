@@ -8,3 +8,4 @@
 5. [Reverse Integer](https://github.com/Astya965/Lifecoding/tree/main/list/5.%20Reverse%20Integer)
 6. [Merge k Sorted Lists](https://github.com/Astya965/Lifecoding/tree/main/list/6.%20Merge%20k%20Sorted%20Lists)
 7. [Same Tree](https://github.com/Astya965/Lifecoding/tree/main/list/7.%20Same%20Tree)
+8. [Binary Search]()
