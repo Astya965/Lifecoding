@@ -2,7 +2,7 @@ import { binarySearch } from "./solution";
 
 const arr1 = [-1, 0, 5, 8, 11];
 const target1 = 8;
-const answer1 = 4;
+const answer1 = 3;
 
 const arr2 = [1, 2, 3];
 const target2 = 8;
@@ -12,7 +12,7 @@ const arr3 = [5];
 const target3 = 5;
 const answer3 = 0;
 
-test('[-1, 0, 5, 8, 11], 8 => 4', () => {
+test('[-1, 0, 5, 8, 11], 8 => 3', () => {
     expect(binarySearch(arr1, target1)).toEqual(answer1);
 });
 

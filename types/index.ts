@@ -10,11 +10,11 @@ export class ListNode {
 
 //Definition for a binary tree node.
 export class TreeNode {
-    val: number
+    val: number | null
     left: TreeNode | null
     right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
-        this.val = (val===undefined ? 0 : val)
+    constructor(val?: number | null, left?: TreeNode | null, right?: TreeNode | null) {
+        this.val = (val===undefined ? null : val)
         this.left = (left===undefined ? null : left)
         this.right = (right===undefined ? null : right)
     }
